@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "title": "Generate a static site with React + Capri",
+  "description": "Capri is a static site generator for React/Preact/SolidJS that supports partial hydration and live CMS previews.",
+  "previewMedia": {
+    "type": "image",
+    "src": ".sanity-template/assets/capri.png",
+    "alt": "Capri"
+  },
+  "technologies": [
+    {
+      "id": "capri",
+      "name": "Capri",
+      "url": "https://github.com/capri-js/capri/"
+    }
+  ],
+  "deployment": {
+    "provider": "netlify",
+    "sites": [
+      {
+        "id": "studio",
+        "type": "studio",
+        "title": "Sanity Studio",
+        "description": "The Sanity Studio is where you edit and structure your content.",
+        "dir": "../studio",
+        "requirements": ["build-hook"],
+        "buildSettings": {
+          "base": "studio",
+          "dir": "dist",
+          "cmd": "npm run build && cp netlify.toml dist"
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": ".sanity-template/assets/studio.jpg",
+          "alt": "Capri live preview in the studio"
+        }
+      },
+      {
+        "id": "web",
+        "type": "web",
+        "title": "Static Capri Website",
+        "description": "A React based site that ships zero KB of JavaScript to the client.",
+        "dir": "../web",
+        "requirements": ["build-hook"],
+        "buildSettings": {
+          "base": "web",
+          "dir": "dist",
+          "cmd": "npm run build"
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": ".sanity-template/assets/frontend.jpg",
+          "alt": "Capri demo website"
+        }
+      }
+    ]
+  }
+}

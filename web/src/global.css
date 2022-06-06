@@ -1,0 +1,31 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("./fonts/OpenSans-Var.woff2") format("woff2 supports variations"),
+    url("./fonts/OpenSans-Var.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-width: 75 100;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  font-family: OpenSans;
+  font-size: calc(1em + 0.5vw);
+  font-size: clamp(1em, calc(0.5em + 1vw), 1.5em);
+  --highlight: #ffdb2d;
+  --notice: #ff6464;
+  --secondary: #56c140;
+  --dark: #3c6534;
+  --darkest: #08360f;
+  --neutral: #727272;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

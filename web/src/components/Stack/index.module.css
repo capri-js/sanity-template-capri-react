@@ -1,0 +1,14 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  & > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%; /* IE11 */
+  }
+  & > * + * {
+    margin-top: var(--space, 1em);
+  }
+}

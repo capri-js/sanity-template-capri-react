@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100px;
+}
+.icon {
+  position: absolute;
+  left: -1.5em;
+  top: 0;
+  filter: contrast(0) sepia(1) hue-rotate(18deg) saturate(2) brightness(1.5);
+}
+.title {
+  font-weight: 700;
+  line-height: 1.25;
+  position: relative;
+}
+.text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 1em;
+  max-width: 100%;
+}

@@ -1,0 +1,8 @@
+.root {
+  background: var(--notice);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.5em 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}

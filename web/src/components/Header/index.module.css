@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  flex: 1 1 20vw;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  & img {
+    max-width: clamp(165px, 20vw, 282px);
+  }
+}

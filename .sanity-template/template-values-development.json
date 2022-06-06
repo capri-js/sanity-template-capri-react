@@ -1,0 +1,17 @@
+{
+  "repository": {
+    "name": "sanity-template-capri",
+    "owner": "capri-js",
+    "private": false
+  },
+  "sanity": {
+    "dataset": "production",
+    "projectId": "46nuxe13",
+    "projectTitle": "Capri"
+  },
+  "deployments": {
+    "web": {
+      "url": "http://localhost:3000/"
+    }
+  }
+}

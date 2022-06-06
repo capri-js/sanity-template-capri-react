@@ -1,0 +1,28 @@
+.root {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  position: relative;
+  background: #fff;
+  &:nth-of-type(2n) {
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 230, 113, 0.2) 0%,
+        rgba(255, 230, 113, 0) 50%
+      ),
+      #3c6534;
+  }
+  --space: 2rem;
+  &::before {
+    content: "";
+    background: inherit;
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: -31px;
+    left: 0;
+    right: 0;
+    mask-image: url(./wave.svg);
+    mask-size: cover;
+  }
+}

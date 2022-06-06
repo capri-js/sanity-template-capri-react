@@ -1,0 +1,11 @@
+.root {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  color: var(--notice);
+}
+
+.type {
+  color: #000;
+  font-weight: 400;
+}
