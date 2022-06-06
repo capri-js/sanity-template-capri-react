@@ -4,7 +4,7 @@
     url("./fonts/OpenSans-Var.woff2") format("woff2-variations");
   font-weight: 300 700;
   font-width: 75 100;
-  font-display: swap;
+  font-display: optional;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: calc(1em + 0.5vw);
   font-size: clamp(1em, calc(0.5em + 1vw), 1.5em);
   --highlight: #ffdb2d;
