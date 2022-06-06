@@ -13,5 +13,6 @@
   margin-right: 1em;
   & img {
     max-width: clamp(165px, 20vw, 282px);
+    height: auto;
   }
 }
