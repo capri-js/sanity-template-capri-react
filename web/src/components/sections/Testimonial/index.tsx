@@ -12,7 +12,10 @@ export function Testimonial({ quote, name, info, image }: Props) {
           {image && (
             <img
               className={styles.image}
-              src={urlBuilder.image(image).size(56, 56).url()}
+              alt={name}
+              width="64"
+              height="64"
+              src={urlBuilder.image(image).size(64, 64).url()}
             />
           )}
           <div className={styles.text}>
