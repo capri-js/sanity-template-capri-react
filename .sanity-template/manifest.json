@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "title": "Generate a static site with React + Capri",
-  "description": "Capri is a static site generator for React/Preact/SolidJS that supports partial hydration and live CMS previews.",
+  "title": "a static site with React + Capri",
+  "description": "Capri is a static site generator that supports partial hydration and live CMS previews.",
   "previewMedia": {
     "type": "image",
     "src": ".sanity-template/assets/capri.png",
