@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "title": "a static site with React + Capri",
+  "title": "A static site with React and Capri",
   "description": "Capri is a static site generator that supports partial hydration and live CMS previews.",
   "previewMedia": {
     "type": "image",
