@@ -1,6 +1,6 @@
 # About this starter template
 
-[Capri](https://github.com/capri-js/capri) is a static site generator for React/Preact/SolidJS.
+[Capri](https://github.com/capri-js/capri) is a static site generator for React/Preact/SolidJS that supports partial hydration, also known as [islands architecture](https://jasonformat.com/islands-architecture/).
 
 This Sanity starter template uses React components to build a site that ships zero KB of JavaScript to the client in production.
 
