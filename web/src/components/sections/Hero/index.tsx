@@ -6,8 +6,8 @@ export function Hero({ heading, text }: Props) {
   return (
     <section className={styles.root}>
       <Content>
-        <div className={styles.heading}>{heading}</div>
-        <h1 className={styles.text}>{text}</h1>
+        <h1 className={styles.heading}>{heading}</h1>
+        <div className={styles.text}>{text}</div>
       </Content>
     </section>
   );
