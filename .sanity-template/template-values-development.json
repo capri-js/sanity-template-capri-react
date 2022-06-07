@@ -10,8 +10,21 @@
     "projectTitle": "Capri"
   },
   "deployments": {
+    "studio": {
+      "url": "http://localhost:3333/",
+      "providerName": "netlify",
+      "providerInfo": {
+        "buildHookId": "N/A",
+        "siteId": "N/A"
+      }
+    },
     "web": {
-      "url": "http://localhost:3000/"
+      "url": "http://localhost:3000/",
+      "providerName": "netlify",
+      "providerInfo": {
+        "buildHookId": "N/A",
+        "siteId": "N/A"
+      }
     }
   }
 }
