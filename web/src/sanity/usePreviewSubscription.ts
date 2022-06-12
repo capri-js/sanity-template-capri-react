@@ -1,5 +1,5 @@
-import { GroqStore } from "@sanity/groq-store";
-import { useEffect, useRef, useState } from "react";
+import { GroqStore, Subscription } from "@sanity/groq-store";
+import { useEffect, useState } from "react";
 import { SanityDocument } from "sanity-codegen";
 
 import { config } from ".";
@@ -14,41 +14,38 @@ export function usePreviewSubscription<T extends SanityDocument>(
 ) {
   const { params, initialData } = subscriptionOptions;
   const [data, setData] = useState(initialData);
-  const storeRef = useRef<GroqStore>();
+
   useEffect(() => {
+    let sub: Subscription | undefined = undefined;
+    let store: GroqStore | undefined = undefined;
+
     async function createStore() {
       const { groqStore } = await import("@sanity/groq-store");
-      storeRef.current = groqStore({
+      store = groqStore({
         ...config,
         listen: true,
         overlayDrafts: true,
         documentLimit: 1000,
       });
+
+      sub = store.subscribe<T[]>(query, params ?? {}, (err, result) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        setData(filterDataToSingleItem(result));
+      });
     }
-    createStore();
+
+    if (!store) {
+      createStore();
+    }
+
     return () => {
-      if (storeRef.current) storeRef.current.close();
+      if (sub?.unsubscribe()) sub.unsubscribe();
+      if (store) store.close();
     };
   }, []);
-
-  useEffect(() => {
-    if (storeRef.current) {
-      const sub = storeRef.current.subscribe<T[]>(
-        query,
-        params ?? {},
-        (err, result) => {
-          if (err) {
-            console.error(err);
-            return;
-          }
-          setData(filterDataToSingleItem(result));
-        }
-      );
-      return () => {
-        sub.unsubscribe();
-      };
-    }
-  }, [query, JSON.stringify(params)]);
 
   return { data };
 }
