@@ -4,7 +4,7 @@
   "description": "Capri is a static site generator that supports partial hydration and live CMS previews.",
   "previewMedia": {
     "type": "image",
-    "src": ".sanity-template/assets/capri.png",
+    "src": ".sanity-template/assets/capri-sanity.png",
     "alt": "Capri"
   },
   "technologies": [
