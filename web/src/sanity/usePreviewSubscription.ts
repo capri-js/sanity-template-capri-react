@@ -45,7 +45,7 @@ export function usePreviewSubscription<T extends SanityDocument>(
       if (sub?.unsubscribe()) sub.unsubscribe();
       if (store) store.close();
     };
-  }, []);
+  }, [query, JSON.stringify(params)]);
 
   return { data };
 }
