@@ -1,25 +1,13 @@
 .root {
-  background: var(--darkest);
-  color: #fff;
+  background: #fff;
+  color: var(--darkest);
   padding: 2rem;
   position: relative;
-  &::before {
-    content: "";
-    background: inherit;
-    display: block;
-    height: 32px;
-    position: absolute;
-    top: -31px;
-    left: 0;
-    right: 0;
-    mask-image: url(../Section/wave.svg);
-    mask-size: cover;
-  }
+  border-top: 1px solid var(--divider);
   & a {
     display: inline-flex;
     align-items: center;
     gap: 0.5ch;
-    text-decoration: none;
-    color: inherit;
+    color: var(--secondary);
   }
 }

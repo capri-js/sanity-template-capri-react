@@ -10,7 +10,6 @@
 .heading {
   font-size: 3em;
   font-weight: 700;
-  font-variation-settings: "wdth" 85;
   line-height: 0.85;
   margin: 0 0 0.25em 0;
   color: var(--darkest);

@@ -5,12 +5,7 @@
   background: #fff;
   &:nth-of-type(2n) {
     color: #fff;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 230, 113, 0.2) 0%,
-        rgba(255, 230, 113, 0) 50%
-      ),
-      #3c6534;
+    background: linear-gradient(90deg, #8BCB86 0.41%, #A1CF81 0.42%, #7FCB90 14.03%, #3ABE9A 51.66%, #00A9B9 97.58%);
   }
   --space: 2rem;
   &::before {

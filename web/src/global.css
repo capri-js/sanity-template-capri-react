@@ -1,27 +1,22 @@
-@font-face {
-  font-family: OpenSans;
-  src: url("./fonts/OpenSans-Var.woff2") format("woff2 supports variations"),
-    url("./fonts/OpenSans-Var.woff2") format("woff2-variations");
-  font-weight: 300 700;
-  font-width: 75 100;
-  font-display: optional;
-}
-
 html,
 body {
   margin: 0;
 }
 
 html {
-  font-family: OpenSans, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
   font-size: calc(1em + 0.5vw);
   font-size: clamp(1em, calc(0.5em + 1vw), 1.5em);
   --highlight: #ffdb2d;
   --notice: #ff6464;
-  --secondary: #56c140;
-  --dark: #3c6534;
-  --darkest: #08360f;
+  --secondary: #2ec4b6;
+  --darkest: #00665c;
   --neutral: #727272;
+  --light: #fafafa;
+  --divider: rgba(60, 60, 67, 0.12);
 }
 
 *,
