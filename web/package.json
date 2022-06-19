@@ -20,7 +20,6 @@
     "isomorphic-fetch": "^3.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-render-to-string": "*",
     "react-router-dom": "^6.3.0",
     "sanity-codegen": "^0.9.8",
     "swr": "^1.3.0"
