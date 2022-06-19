@@ -3,8 +3,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import sanityClient from "@sanity/client";
 
 export const config = {
-  projectId: "46nuxe13",
-  dataset: "production",
+  projectId: "<#< sanity.projectId >#>",
+  dataset: "<#< sanity.dataset >#>",
 };
 
 export const client = sanityClient({
