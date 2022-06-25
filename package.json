@@ -1,0 +1,7 @@
+{
+  "name": "sanity-template-capri-react",
+  "private": true,
+  "scripts": {
+    "start": "npm start --prefix studio & npm start --prefix web"
+  }
+}
